@@ -3,9 +3,29 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%- include('template/head') %>
   </head>
   <body>
+    <center>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="login" name="login" type="text" class="validate">
+              <label for="login">Login</label>
+            </div>
+            <div class="input-field col s8">
+              <i class="material-icons prefix">phone</i>
+              <input id="senha" name="senha" type="password" class="validate">
+              <label for="senha">Senha</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    <center>
+  <%- include('template/scripts') %>
   </body>
 </html>
