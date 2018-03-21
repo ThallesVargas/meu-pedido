@@ -5,27 +5,41 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <%- include('template/head') %>
   </head>
-  <body>
-    <center>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s6">
-              <i class="material-icons prefix">account_circle</i>
-              <input id="login" name="login" type="text" class="validate">
-              <label for="login">Login</label>
-            </div>
-            <div class="input-field col s8">
-              <i class="material-icons prefix">phone</i>
-              <input id="senha" name="senha" type="password" class="validate">
-              <label for="senha">Senha</label>
+  <body class="login">
+
+      <h1 class="center-align"><%= title %></h1>
+    <form class="col s12">
+      <div class="row center-mobile ">
+        <div class="col s12 m6">
+           
+          <div class="card white">
+            <div class="card-content white-text">
+              
+              <div class="row">
+                <div class="input-field col s12 ">
+                  <i class="material-icons prefix login-icons">account_circle</i>
+                  <input id="login" name="login" type="text" class="validate" required>
+                  <label for="login">Login/Email</label>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix login-icons">lock</i>
+                  <input id="senha" name="senha"type="password" class="validate" required>
+                  <label for="senha">Senha</label>
+                </div>
+              </div>
+            <div class="card-action center-align">
+              <a class="waves-effect waves-light btn">Entrar</a>
             </div>
           </div>
-        </form>
+        </div>
       </div>
-    <center>
+    </div>
+  </form>
+    
+      
   <%- include('template/scripts') %>
   </body>
 </html>

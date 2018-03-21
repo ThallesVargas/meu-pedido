@@ -6,3 +6,27 @@ body {
 a {
   color: #00B7FF;
 }
+
+.login{
+  color: white;
+  background-color: #ef5350;
+}
+.login-icons {
+  color: #616161;
+}
+.c-align{
+  text-align: center;
+  
+}
+@media only screen and (max-width: 600px) {
+    .center-mobile{
+      position: relative;
+       margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .center-mobile{
+        position: relative;
+        left:25%;
+    }
+}
