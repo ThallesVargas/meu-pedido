@@ -1,8 +1,8 @@
 <h1>1. Introdução</h1>
-Este documento apresenta os requisitos de usuário do sistema 'Meu Pedido' e está organizado da seguinte forma: a seção 2 contém uma descrição do propósito do sistema; a seção 3 apresenta uma descrição do minimundo apresentando o problema; e a seção 4 apresenta a lista de requisitos de usuário levantados junto ao cliente.
+<p align="justify">Este documento apresenta os requisitos de usuário do sistema 'Meu Pedido' e está organizado da seguinte forma: a seção 2 contém uma descrição do propósito do sistema; a seção 3 apresenta uma descrição do minimundo apresentando o problema; e a seção 4 apresenta a lista de requisitos de usuário levantados junto ao cliente.</p>
 
 <h1>2. Descrição do Propósito do Sistema</h1>
-Este documento apresenta os requisitos de usuário do sistema 'Meu Pedido' e está organizado da seguinte forma: a seção 2 contém uma descrição do propósito do sistema; a seção 3 apresenta uma descrição do minimundo apresentando o problema; e a seção 4 apresenta a lista de requisitos de usuário levantados junto ao cliente.
+<p align="justify">Este documento apresenta os requisitos de usuário do sistema 'Meu Pedido' e está organizado da seguinte forma: a seção 2 contém uma descrição do propósito do sistema; a seção 3 apresenta uma descrição do minimundo apresentando o problema; e a seção 4 apresenta a lista de requisitos de usuário levantados junto ao cliente.</p>
 
 <h1>3. Descrição do Minimundo</h1>
 
@@ -116,3 +116,7 @@ Este documento apresenta os requisitos de usuário do sistema 'Meu Pedido' e est
 <td>SHOULD</td>
 </tr>
 </table>
+
+<h1>5. Definição de Tecnologias</h1>
+
+<p align="justify">Decidiu-se implementar o sistema para 'Meu Pedido' usando a linguagem de programação Javascript, o banco de dados relacional Mysql e o framework de server-side Node.js</p>
