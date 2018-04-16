@@ -1,4 +1,4 @@
-Feature: Cliente se cadastra pelo aplicativo
+Feature: Cliente se cadastra
 
 Scenario: cliente cadastrou informação inválida
 Given cliente digitou informação inválida
@@ -43,15 +43,15 @@ Then o cliente recebe aviso para escolher pelo menos um produto
 
 Feature: Cliente na tela de Pagamento
 
-Scenario: cliente seleciona pagar pelo Picpay
-Given  cliente escolhe pagar pelo Picpay
-When cliente clica no botão PicPay
-Then o aplicativo Picpay será aberto
+Scenario: cliente seleciona pagar pelo cartão cadastrado
+Given  cliente escolhe pagar pelo cartão cadastrado
+When cliente clica no botão meu cartão
+Then o pagamento é realizado
 
-Scenario: cliente seleciona pagar pelo Cartão
-Given  o cliente escolhe pagar pelo Cartão
-When cliente clica no botão Cartão
-Then o cliente realiza o pagamento
+Scenario: cliente seleciona pagar com outro cartão
+Given  o cliente escolhe pagar co moutro cartão
+When cliente clica no botão Outro Cartão
+Then aparece uma nova janela
 
 Scenario: cliente quer cancelar ou adicionar algum produto
 Given  o cliente escolhe cancelar algum produto
