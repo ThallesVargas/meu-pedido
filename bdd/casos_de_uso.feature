@@ -1,8 +1,11 @@
-Feature: Cliente se cadastra
+Casos de uso escrito usando a técnica BDD
+
+4.1 Caso de uso “Cadastrar Cliente”
+Feature: Cliente se cadastra pelo aplicativo
 
 Scenario: cliente cadastrou informação inválida
 Given cliente digitou informação inválida
-When cliente clica em confirmar após preencher todas as informações de cadastro
+When cliente clica em confirmar
 Then o cadastro não deve ser completado 
 
 Scenario: cliente não preencheu todas as informações
@@ -15,19 +18,25 @@ Given cliente preenche todos os campos
 When todas as informações estão válidas
 Then o cadastro deve ser efetivado 
 
+4.2 Caso de uso “Avaliar Serviço”
+
 Feature: Cliente avalia sua compra
 
-Scenario: cliente seleciona uma nota para compra
+Scenario: cliente faz uma avaliação para sua compra
 Given cliente realiza o pagamento
-When cliente seleciona uma “estrela”
+When cliente seleciona de uma a cinco estrelas
 Then a avaliação é realizada
+
+4.3 Caso de uso “Favoritar Produto”
 
 Feature: Cliente favorita produto
 
-Scenario: cliente escolhe uma produto para favoritar
+Scenario: cliente escolhe um produto para favoritar
 Given cliente vai para a tela menu com os produtos
 When cliente clica no botão de favoritar
-Then o produto vá para aba de favoritos
+Then o produto vai para aba de favoritos
+
+4.4 Caso de uso “Comprar Produto”
 
 Feature: Cliente na tela Menu
 
@@ -41,23 +50,26 @@ Given  o cliente não escolhe nenhum produto
 When cliente clica no botão Comprar
 Then o cliente recebe aviso para escolher pelo menos um produto
 
+4.5 Caso de uso “Realizar Pagamento”
+
 Feature: Cliente na tela de Pagamento
 
-Scenario: cliente seleciona pagar pelo cartão cadastrado
-Given  cliente escolhe pagar pelo cartão cadastrado
-When cliente clica no botão meu cartão
-Then o pagamento é realizado
+Scenario: cliente seleciona pagar por outro cartão
+Given  cliente escolhe pagar com outro cartão
+When cliente clica no botão outro cartão
+Then uma nova janela aparece para realizar o cadastro
 
-Scenario: cliente seleciona pagar com outro cartão
-Given  o cliente escolhe pagar co moutro cartão
-When cliente clica no botão Outro Cartão
-Then aparece uma nova janela
+Scenario: cliente seleciona pagar pelo Cartão
+Given  o cliente escolhe pagar pelo Cartão
+When cliente clica no botão Cartão
+Then o cliente realiza o pagamento
 
 Scenario: cliente quer cancelar ou adicionar algum produto
 Given  o cliente escolhe cancelar algum produto
 When cliente clica no botão Cancelar
 Then o cliente volta para tela de menu
 
+4.6 Caso de Uso “Cadastrar Produto”
 Feature: Funcionário Cadastra novo produto
 
 Scenario: funcionário não preencheu todas as informações
@@ -69,6 +81,8 @@ Scenario: funcionário preenche todas as informações
 Given funcionário preenche todos os campos
 When todas as informações estão válidas
 Then o cadastro deve ser efetivado 
+
+4.7 Caso de Uso “Controlar Estoque”
 
 Feature: Funcionário Controla o Estoque
 
@@ -86,6 +100,7 @@ Given funcionário edita preço do produto
 When funcionário clicar no botão de salvar alteração
 Then o preço do produto é atualizado
 
+4.8 Caso de Uso “Gerenciar Compra”
 
 Feature: Funcionário Gerencia Compras
 
