@@ -32,21 +32,21 @@ Then a avaliação é realizada
 Feature: Cliente favorita produto
 
 Scenario: cliente escolhe um produto para favoritar
-Given cliente vai para a tela menu com os produtos
+Given cliente está na tela do menu
 When cliente clica no botão de favoritar
-Then o produto vai para aba de favoritos
+Then o produto é adicionado ao seus favoritos
 
 4.4 Caso de uso “Comprar Produto”
 
 Feature: Cliente na tela Menu
 
 Scenario: cliente seleciona pelo menos um produto
-Given  cliente escolhe produtos que irá comprar
+Given  cliente adiciona ao carrinho produtos que irá comprar
 When cliente clica no botão Comprar
 Then o cliente irá para tela de pagamento
 
 Scenario: cliente não seleciona nenhum produto
-Given  o cliente não escolhe nenhum produto
+Given  o cliente não adiciona ao carrinho nenhum produto
 When cliente clica no botão Comprar
 Then o cliente recebe aviso para escolher pelo menos um produto
 
